@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Prints numbers between 0 to 9 and letters between a to f.
+ * main - Printing numbers between 0 to 9 with letters between a to f.
  *
- * Return: Always 0 (Success)
+ * Return:  0 is Success always
  */
 int main(void)
 {

@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Prints numbers from 0 to 9.
+ * main - Printing numbers from 0 to 9.
  *
- * Return: Always 0 (Success)
+ * Return: 0 is Success
  */
 int main(void)
 {
@@ -11,7 +11,7 @@ int main(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		purchar(i);
+		putchar(i);
 	}
 	putchar('\n');
 	return (0);

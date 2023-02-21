@@ -1,18 +1,19 @@
 #include <stdio.h>
 #include <main.h>
+
 /**
  * main - Printing alphate Entry point
  *
  * Return: 0 is Success
  */
-int main(void)
+void print_alphabet(void)
 {
-	int n;
+	int i;
 
-	for (n = 'a'; n <= 'z'; n++)
+	for (i = 97; i <= 122; i++)
 	{
-		putchar(n);
+		_putchar(i);
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }

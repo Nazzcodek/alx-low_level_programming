@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * isupper - A fuction that determine if a char is upper or lower
+ * _isupper - A fuction that determine if a char is upper or lower
  * @c: input character
- * return: 1 is success for upper 0 success for lower
+ * Return: 1 is success for upper 0 success for lower
  */
 
 int _isupper(int c)

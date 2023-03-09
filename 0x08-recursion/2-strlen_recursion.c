@@ -8,7 +8,7 @@
  * Return: 0 is success
  */
 
-void _strlen_recursion(char *s)
+int _strlen_recursion(char *s)
 {
 	int l = 0;
 

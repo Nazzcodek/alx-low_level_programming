@@ -3,12 +3,12 @@
 /**
  * _print_rev_recursion - A function that print a stringin reverse
  *
- * @c: input string
+ * @s: input string
  *
  * Return: 0 is success
  */
 
-void _print_rev_recursion(char *c)
+void _print_rev_recursion(char *s)
 {
 	if (*s)
 	{

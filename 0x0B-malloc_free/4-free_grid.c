@@ -5,10 +5,10 @@
 /**
  * free_grid - a function that free 2D grid
  *
- * @grid: grud to be free
+ * @grid: grid to be free
  * @height: height of the grid
  *
- * Return: 0 always sucess
+ * Return: freed grid
  */
 
 void free_grid(int **grid, int height)

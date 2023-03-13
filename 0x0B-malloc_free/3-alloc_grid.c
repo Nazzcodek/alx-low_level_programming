@@ -20,7 +20,7 @@ int **alloc_grid(int width, int height)
 	if (width <= 0 || height <= 0)
 		return (NULL);
 
-	iarray = molloc(sizeof(char) * height);
+	iarray = malloc(sizeof(char) * height);
 
 	if (iarray == NULL)
 	{

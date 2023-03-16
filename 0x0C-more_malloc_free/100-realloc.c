@@ -37,8 +37,10 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	}
 
 	new_loc = malloc(new_size);
+
 	if (new_loc == NULL)
 		return (NULL);
+
 	old_loc = ptr
 
 	for (i = 0; i < new_size && i < old_size; i++)

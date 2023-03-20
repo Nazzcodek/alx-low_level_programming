@@ -2,13 +2,13 @@
 #define DOG_H
 
 /**
- * struct Dog - dog structure
+ * struct dog - dog structure
  * @name: dog name
  * @age: dog age
  * @owner: dog owner
  */
 
-typedef struct Dog
+typedef struct dog
 {
 	char *name;
 	float age;

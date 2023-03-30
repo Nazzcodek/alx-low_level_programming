@@ -13,7 +13,7 @@ size_t print_list(const list_t *h)
 {
 	size_t node = 0;
 
-	while (h)
+	while (h != 0)
 	{
 		if (h->str == NULL)
 			printf("[0] (nill)\n");

@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 
 /**
  * delete_nodeint_at_index - a function that delete node
@@ -15,7 +15,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	listint_t *node, *in_node;
 	unsigned int del_node;
 
-	in_node = *head
+	in_node = *head;
 
 	if (in_node == NULL)
 		return (-1);

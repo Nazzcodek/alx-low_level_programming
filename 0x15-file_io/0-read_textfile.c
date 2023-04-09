@@ -10,9 +10,10 @@
  * (0) if no file, not open, not write
  */
 
-ssize_t read_textfile(const char *filename, size_t letters);
+ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t op, re, wri;
+	FILE *fp;
+	ssize_t re, wri;
 	char *buffer;
 
 	if (!filename)
@@ -22,18 +23,22 @@ ssize_t read_textfile(const char *filename, size_t letters);
 	if (buffer == NULL)
 		return (0);
 
-	op = open(filename, O_RDONLY);
-	re = read(op, buffer, letters);
-	wri = write(STDOUT_FILENO, buffer, re);
+	fp = fopen(filename, "r");
+	re = fread(buffer, sizeof(char), letters, fp);
+	wri = fwrite(buffer, sizeof(char), re, stdout);
 
-	if (op == -1)
+	if (fp == NULL)
+	{
+		free(buffer);
 		return (0);
+
+	}
 
 	if (!buffer)
 		return (0);
 	free(buffer);
 
-	close(op);
+	fclose(fp);
 
 	return (wri);
 }

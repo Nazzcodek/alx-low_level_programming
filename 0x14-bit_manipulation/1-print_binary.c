@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * print_binary - Prints the binary digits of a number

@@ -127,7 +127,7 @@ void add_to_sorted_list(shash_table_t *table, shash_node_t *node)
 int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
-	shash_node_t *sht_curr;
+	shash_node_t *sht_curr, *shn;
 	char *new_value;
 
 	if (ht == NULL || ht->array == NULL || ht->size == 0 ||
@@ -155,7 +155,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 		sht_curr = sht_curr->next;
 	}
 
-	shash_node_t *shn = make_shash_node(key, value);
+	shn = make_shash_node(key, value);
 
 	if (shn == NULL)
 		return (0);

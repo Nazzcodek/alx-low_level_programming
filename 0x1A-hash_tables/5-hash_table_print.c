@@ -4,9 +4,7 @@
  * hash_table_print - function to print hash table
  *
  * @ht: hash table to print
- *
- * Return: print hash table
- */
+ **/
 
 void hash_table_print(const hash_table_t *ht)
 {
